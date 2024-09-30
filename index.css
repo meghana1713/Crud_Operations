@@ -1,0 +1,19 @@
+#post{
+    display: flex;
+    flex-direction: column;
+width: 500px;
+justify-content: center; 
+margin: 0 30% 70%;  
+margin: auto;
+}
+#post img{
+width: 100%;
+}
+#navbar{
+display: flex;
+justify-content: space-between;
+border: 2px solid black;
+}
+#logo img{
+height: 100%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+   <div id="navbar"></div>
+    <div>
+        <h3>Add Post</h3>
+        <input type="text" id="title" placeholder="Title"/>
+        <input type="file" id="image" placeholder="images" accept="images/*" onchange="handleImage(event)"/>
+        <!-- accept="images/*" it is an syntax which is used to accept only images when we try to upload the files -->
+         <button id="Submit_btn" onclick="addPost()">Submit</button>
+         <!-- whenever we create any object here it is post the id will created in database we dont beed to do it but while updating or deleting we need to mention those id's -->
+
+    </div>
+    <div>
+        <h3>Delete Post</h3>
+        <input type="text" id="delete_id" placeholder="enter id to delete" />
+        <button onclick="deletePost()">Delete</button>
+       </div>
+       <!-- patch is used to update any specific key-value in an object from database put is used to replace or update with new values the entire object we use put  -->
+<div>
+    <h3>Update Post</h3>
+    <input type="text" id="update_id" placeholder="enter id to be update" />
+    <input type="text" id="update_title" placeholder="enter new title " />
+    <button onclick="updatePost()">Update Title</button>
+
+
+
+</div>
+<div></div>
+    <h3>Replace Post</h3>
+    <input type="text" id="replace_id" placeholder="enter id to be replace" />
+    <input type="text" id="replace_title" placeholder="enter new title " />
+    <button onclick="replacePost()">Update Title</button>
+
+
+
+</div>
+</body>
+</html>
+<script src="./create.js"></script>
